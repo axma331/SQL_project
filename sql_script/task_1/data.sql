@@ -1,3 +1,5 @@
+SET search_path TO schema_for_task1;
+
 TRUNCATE TABLE Address;
 TRUNCATE TABLE Person CASCADE;
 

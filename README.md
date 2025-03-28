@@ -1,6 +1,7 @@
-Практические задания по реляционным базам данных, языка запросов SQL и СУБД (MySQL/PostgreSQL).
+**Практические задания по реляционным базам данных, языка запросов SQL и СУБД (MySQL/PostgreSQL).**
 
-**Задание 1**
+<details>
+<summary><strong>Задание 1</strong></summary>
 
 SCHEMA:
 
@@ -17,9 +18,12 @@ Write a SQL query for a report that provides the following information for each 
 
 **FirstName, LastName, City, State**
 
+</details>
+
 ---
 
-**Задание 2**
+<details>
+<summary><strong>Задание 2</strong></summary>
 
 SCHEMA:
 
@@ -45,9 +49,12 @@ For example, given the above Employee table, the query should return 200 as the 
 |---------------------|
 | 200                 |
 
+</details>
+
 ---
 
-**Задание 3**
+<details>
+<summary><strong>Задание 3</strong></summary>
 
 SCHEMA:
 
@@ -62,15 +69,25 @@ insert into Employee (Id, Name, Salary, ManagerId) values ('4', 'Max', '90000', 
 
 The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 
+| Id | Name  | Salary | ManagerId |
+|----|-------|--------|-----------|
+| 1  | Joe   | 70000  | 3         |
+| 2  | Henry | 80000  | 4         |
+| 3  | Sam   | 60000  | NULL      |
+| 4  | Max   | 90000  | NULL      |
+
 Given the Employee table, write a SQL query that finds out employees who earn more than their managers.
 
 | Employee |
 |----------|
 | Joe      |
 
+</details>
+
 ---
 
-**Задание 4**
+<details>
+<summary><strong>Задание 4</strong></summary>
 
 SCHEMA:
 
@@ -84,15 +101,25 @@ insert into Person (Id, Email) values ('3', 'a@b.com');
 
 Write a SQL query to find all duplicate emails in a table named Person.
 
+| Id | Email   |
+|----|---------|
+| 1  | a@b.com |
+| 2  | c@d.com |
+| 3  | a@b.com |
+
+For example, your query should return the following for the above table:
+
 | Email   |
 |---------|
 | a@b.com |
 
 Note: All emails are in lowercase.
+</details>
 
 ---
 
-**Задание 5**
+<details>
+<summary><strong>Задание 5</strong></summary>
 
 SCHEMA:
 
@@ -111,14 +138,35 @@ insert into Orders (Id, CustomerId) values ('2', '1');
 
 Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
 
+Table: Customers.
+
+| Id | Name  |
+|----|-------|
+| 1  | Joe   |
+| 2  | Henry |
+| 3  | Sam   |
+| 4  | Max   |
+
+Table: Orders.
+
+| Id | CustomerId |
+|----|------------|
+| 1  | 3          |
+| 2  | 1          |
+
+Using the above tables as example, return the following:
+
 | Customers |
 |-----------|
 | Henry     |
 | Max       |
 
+</details>
+
 ---
 
-**Задание 6**
+<details>
+<summary><strong>Задание 6</strong></summary>
 
 SCHEMA:
 
@@ -160,3 +208,4 @@ Should output:
 |---------|
 | Math    |
 
+</details>

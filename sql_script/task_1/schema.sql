@@ -1,5 +1,4 @@
-CREATE SCHEMA task1;
-SET search_path TO task1;
+SET search_path TO schema_for_task1;
 
 CREATE TABLE Person
 (
